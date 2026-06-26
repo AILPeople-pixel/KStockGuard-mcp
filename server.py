@@ -96,7 +96,7 @@ def get_stock(symbol: str) -> str:
         return f"분석 중 오류 발생: {str(e)}\n(지킴이: 종목 코드를 다시 한번 확인해 주세요!)"
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))
+    port = int(os.environ.get("PORT", "10000"))
 
     mcp.run(
         transport="http",
